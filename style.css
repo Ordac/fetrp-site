@@ -1,0 +1,314 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121215;
+    margin: 20px;
+}
+
+.backgroundImage {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    background-image: url("images/wallhaven-gp6p5l.png");
+    background-repeat: no-repeat;
+
+    filter: blur(0);
+    opacity: 0.2;
+
+    float: left;
+}
+
+h1 {
+    font-family: montserrat;
+    color: #f7f7f8;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    font-family: montserrat;
+    color: #aaacb2;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+h3 {
+    font-weight: bolder;
+}
+
+p {
+    font-family: montserrat;
+    color: #f7f7f8;
+    line-height: 30px;
+}
+
+.cardText {
+    transform: translate(20px, 20px);
+    padding-right: 40px;
+}
+
+.centerCards {
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    /* background-color: rgb(39, 41, 48, 0.5); */
+    background-image: linear-gradient(to bottom right, rgb(39, 41, 48, 0.25), rgb(64, 64, 64, 0.5));
+    /* transform-style: preserve-3d;
+    transform: skewX(1deg); */
+    border-radius: 16px;
+    max-width: 800px;
+    width: auto;
+    margin-bottom: 20px;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow: 0px 0px 20px black;
+
+    scale: 1;
+
+    transition: 0.5s;
+}
+
+.centerCards:hover {
+    scale: 1.025;
+    backdrop-filter: blur(16px);
+}
+
+#gameInfo {
+    padding-bottom: 20px;
+}
+
+.titleSub {
+    padding-right: 10%;
+}
+
+#pageThumbnail {
+    position: relative;
+    width: 90%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.play-button {
+    background-color: #335fff;
+    width: 37%;
+    height: 60px;
+    border-width: 0px;
+    border-radius: 16px;
+
+    box-shadow: 0px 0px 0px black;
+
+    position: relative;
+    margin-left:60%;
+    margin-bottom:20px;
+
+    transition: 0.5s;
+}
+
+.fa-play {
+    color: #FFFFFF;
+    scale: 2;
+
+    transition: 0.5s
+}
+
+.play-button:hover {
+    cursor: pointer;
+
+    scale: 1.05;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    background-color: #FFFFFF;
+}
+
+.play-button:hover .fa-play {
+    color: #000000;
+    scale: 1;
+}
+
+.play-button:not(:hover) {
+    scale: 1;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+.play-button:active {
+    scale: 0.9;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.3);
+    opacity: 0.5;
+}
+
+a {
+    color: #f7f7f8;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #f7f7f8;
+    text-decoration: none;
+}
+
+.author:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.maturityDetails {
+    width: 100%;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    background-color: rgb(12, 12, 14, 0.7);
+    border-radius: 16px;
+
+    box-shadow: 0px 2.5px 5px black;
+    backdrop-filter: blur(8px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.gameStats {
+    width: 100%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    background-color: rgb(12, 12, 14, 0.35);
+    border-radius: 16px;
+
+    box-shadow: 0px 2.5px 5px black;
+    backdrop-filter: blur(8px);
+
+    display: flex;
+}
+
+.stat {
+    margin: 20px;
+    align-content: center;
+    text-align: center;
+
+    /* border-left: 2px solid rgb(247, 247, 248, 0.1);
+    border-right: 2px solid rgb(247, 247, 248, 0.1); */
+
+    flex: 0px;
+}
+
+.rounded {
+    color: rgb(247, 247, 248, 0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cardHeader {
+    text-align: center;
+}
+
+.socialLinks {
+    max-width: 800px;
+    height: 95px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: rgb(12, 12, 14, 0.35);
+    border-radius: 16px;
+
+    box-shadow: 0px 2.5px 5px black;
+    backdrop-filter: blur(8px);
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: flex;
+}
+
+.socialMedia {
+    max-width: 33%;
+    height: 100%;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    background-color: rgb(39, 41, 48, 0.35);
+    border-radius: 16px;
+
+    box-shadow: 0px 2.5px 5px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+
+    flex: auto;
+
+    transition: 0.5s;
+}
+
+#social-icon {
+    margin-left: 40px;
+    margin-top: 40px;
+
+    scale: 3;
+
+    position: relative;
+    float: left;
+}
+
+.fa-discord {
+    color: rgb(87, 101, 242);
+    transition: 0.5s;
+}
+
+.fa-youtube {
+    color: rgb(255, 0, 51);
+    transition: 0.5s;
+}
+
+.fa-x-twitter {
+    color: rgb(26, 140, 216);
+    transition: 0.5s;
+}
+
+#social-name {
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 0px;
+
+    transform: translate(30px, 20px);
+}
+
+#social-description {
+    font-size: 12px;
+    margin: 0px;
+
+    transform: translate(30px, 15px);
+}
+
+.socialMedia:hover {
+    cursor: pointer;
+
+    scale: 1.05;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.socialMedia:hover #social-icon {
+    color: #f7f7f8;
+}
